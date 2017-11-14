@@ -1,7 +1,7 @@
 {% set name = "pandas-profiling" %}
-{% set version = "1.3.0" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "53244ffc5e924fe702d599fba13988268257207e45b104ccbb2f922458c9591e" %}
+{% set version = "1.4.0" %}
+{%set hash_type = "md5" %}
+{%set hash_val = "f6cd816607a2627ddb586466f55d1b95" %}
 
 package:
   name: {{ name|lower }}
@@ -22,8 +22,8 @@ requirements:
     - setuptools
 
   run:
-    - python
-    - pandas >=0.16
+    - python >=2.7
+    - pandas >=0.19
     - matplotlib >=1.4
     - jinja2 >=2.8
     - six >=1.9
