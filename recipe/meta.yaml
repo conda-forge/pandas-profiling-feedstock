@@ -1,7 +1,7 @@
 {% set name = "pandas-profiling" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {%set hash_type = "md5" %}
-{%set hash_val = "f6cd816607a2627ddb586466f55d1b95" %}
+{%set hash_val = "6b5b0f759dca4f0ebdf6972cf4475b3b" %}
 
 package:
   name: {{ name|lower }}
