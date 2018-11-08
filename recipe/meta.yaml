@@ -1,7 +1,5 @@
 {% set name = "pandas-profiling" %}
 {% set version = "1.4.1" %}
-{%set hash_type = "md5" %}
-{%set hash_val = "6b5b0f759dca4f0ebdf6972cf4475b3b" %}
 
 package:
   name: {{ name|lower }}
@@ -10,17 +8,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: 5014d8f160e44b6f56321d45fcf9670f8ad647587b545ab43d203c600217f307
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-
+    - pip
   run:
     - python >=2.7
     - pandas >=0.19
