@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "1.4.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5acc03204c4c1b92c8b6dc3f766dfcce65feec5219eb979d9509a0522f064f8
+  sha256: 258d849d7bd398cc4180ddfe9f484077562d1cb7945ef37f1c140d514050ef8c
 
 build:
   number: 0
