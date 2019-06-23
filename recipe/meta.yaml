@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -31,11 +31,11 @@ test:
     - pandas_profiling
 
 about:
-  home: http://github.com/jospolfliet/pandas-profiling
+  home: http://github.com/pandas-profiling/pandas-profiling
   license: MIT
   license_file: LICENSE
   summary: 'Generate profile report for pandas DataFrame'
-  dev_url: http://github.com/jospolfliet/pandas-profiling
+  dev_url: http://github.com/pandas-profiling/pandas-profiling
 
 extra:
   recipe-maintainers:
