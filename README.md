@@ -1,7 +1,7 @@
 About pandas-profiling
 ======================
 
-Home: http://github.com/jospolfliet/pandas-profiling
+Home: http://github.com/pandas-profiling/pandas-profiling
 
 Package license: MIT
 
