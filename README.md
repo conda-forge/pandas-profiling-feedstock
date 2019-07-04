@@ -1,7 +1,7 @@
 About pandas-profiling
 ======================
 
-Home: http://github.com/jospolfliet/pandas-profiling
+Home: http://github.com/pandas-profiling/pandas-profiling
 
 Package license: MIT
 
@@ -15,12 +15,10 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4702&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pandas-profiling-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pandasprof-feedstock?branchName=master">
       </a>
     </td>
   </tr>
