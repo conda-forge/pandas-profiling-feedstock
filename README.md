@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@philip-khor](https://github.com/philip-khor/)
 * [@proinsias](https://github.com/proinsias/)
+* [@sbrugman](https://github.com/sbrugman/)
 
