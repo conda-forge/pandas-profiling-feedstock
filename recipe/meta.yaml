@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "1.4.2" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5acc03204c4c1b92c8b6dc3f766dfcce65feec5219eb979d9509a0522f064f8
+  sha256: 148c4aade34440f78d2e2b1b926071e1b7441a3729f9ad36025238e66503aa76
 
 build:
   number: 0
@@ -17,26 +17,33 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=2.7
     - pip
   run:
     - python >=2.7
+    - scipy >=1.3
+    - requests >=2.22
+    - missingno >=0.4.1
     - pandas >=0.19
     - matplotlib >=1.4
     - jinja2 >=2.8
-    - six >=1.9
-
+    - htmlmin >=0.1.12
+    - phik >=0.9.8
+    - confuse >=1.0.0
+    
 test:
   imports:
     - pandas_profiling
 
 about:
-  home: http://github.com/jospolfliet/pandas-profiling
+  home: http://github.com/pandas-profiling/pandas-profiling
   license: MIT
   license_file: LICENSE
   summary: 'Generate profile report for pandas DataFrame'
-  dev_url: http://github.com/jospolfliet/pandas-profiling
+  dev_url: http://github.com/pandas-profiling/pandas-profiling
+  doc_url: https://pandas-profiling.github.io/pandas-profiling/docs/
 
 extra:
   recipe-maintainers:
     - proinsias
+    - philip-khor
