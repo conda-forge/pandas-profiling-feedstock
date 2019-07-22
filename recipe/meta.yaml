@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 148c4aade34440f78d2e2b1b926071e1b7441a3729f9ad36025238e66503aa76
+  sha256: 33ddcc25b39eb4aa025a93f8ed4515a489caab50b374dad54de2439189800007
 
 build:
   number: 0
@@ -23,13 +23,14 @@ requirements:
     - python >=3.6
     - scipy >=1.3
     - requests >=2.22
-    - missingno >=0.4.1
+    - missingno >=0.4.2
     - pandas >=0.19
     - matplotlib >=1.4
     - jinja2 >=2.8
     - htmlmin >=0.1.12
     - phik >=0.9.8
     - confuse >=1.0.0
+    - astropy
     
 test:
   imports:
