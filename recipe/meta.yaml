@@ -11,7 +11,7 @@ source:
   sha256: 960e1250643ab2fec6adf334021ee67991e13cecad97b6f53557e45e9ce50f01
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,7 +25,7 @@ requirements:
     - requests >=2.22
     - missingno >=0.4.2
     - pandas >=0.19
-    - matplotlib >=1.4
+    - matplotlib-base >=1.4
     - jinja2 >=2.8
     - htmlmin >=0.1.12
     - phik >=0.9.8
