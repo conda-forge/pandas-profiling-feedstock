@@ -11,7 +11,7 @@ source:
   sha256: 8b050d38ecfc324fe4159abcafbb4f84a3316af9274955d37accb1349a6f998b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -31,7 +31,7 @@ requirements:
     - phik >=0.9.10
     - confuse >=1.0.0
     - astropy >=4.0
-    - visions >=0.4.4
+    - visions 0.4.4
     - numpy >=1.16.0
     - tangled-up-in-unicode >=0.0.6
     - tqdm >=4.43.0
@@ -42,6 +42,10 @@ requirements:
 test:
   imports:
     - pandas_profiling
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/pandas-profiling/pandas-profiling
