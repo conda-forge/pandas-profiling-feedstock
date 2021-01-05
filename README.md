@@ -5,11 +5,13 @@ Home: http://github.com/pandas-profiling/pandas-profiling
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandas-profiling-feedstock/blob/master/LICENSE.txt)
 
 Summary: Generate profile report for pandas DataFrame
 
+Development: http://github.com/pandas-profiling/pandas-profiling
 
+Documentation: https://pandas-profiling.github.io/pandas-profiling/docs/
 
 Current build status
 ====================
