@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "2.10.0" %}
+{% set version = "2.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bec91410e930f8ef4b24f0a77c50a83ba31db289923f4b9e445e8d5e012c17c6
+  sha256: 52d4325c0f8f90af01a57eacd122a7320b81e5465f7f06f0fc6fae18c00a2b1c
 
 build:
   number: 0
@@ -38,9 +38,9 @@ requirements:
     - ipywidgets >=7.5.1
     - imagehash
     - pillow
-    - seaborn-base >=0.10.1 
+    - seaborn-base >=0.10.1
     - joblib
-    - networkx 
+    - networkx
     - ipython
 
 test:
