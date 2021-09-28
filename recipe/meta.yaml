@@ -31,17 +31,14 @@ requirements:
     - jinja2 >=2.11.1
     - htmlmin >=0.1.12
     - phik >=0.11.1
-    - confuse >=1.0.0
-    - visions 0.7.1
+    - visions 0.7.4
     - numpy >=1.16.0
-    - tangled-up-in-unicode >=0.0.7
+    - tangled-up-in-unicode 0.1.0
     - tqdm >=4.48.2
-    - ipywidgets >=7.5.1
-    - imagehash
-    - pillow
     - seaborn-base >=0.10.1
-    - joblib
-    - ipython
+    - joblib 1.0.1
+    - markupsafe 2.0.1
+    - multimethod >=1.4
 
 test:
   imports:
