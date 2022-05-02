@@ -31,15 +31,15 @@ requirements:
     - jinja2 >=2.11.1
     - htmlmin >=0.1.12
     - phik >=0.11.1
-    - visions 0.7.4
+    - visions 0.7.5
     - numpy >=1.16.0
-    - tangled-up-in-unicode 0.1.0
+    - tangled-up-in-unicode 0.2.0
     - tqdm >=4.48.2
     - imagehash
     - pillow
     - seaborn-base >=0.10.1
-    - joblib 1.0.1
-    - markupsafe 2.0.1
+    - joblib 1.1.0
+    - markupsafe 2.1.1
     - multimethod >=1.4
 
 test:
