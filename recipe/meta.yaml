@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 120c3696ba014e2db3873fd4d9d58720be75b9726ab95cc8abfe4ffbf5277fe8
+  sha256: 8897c2628e3a9b5c915d038aa1782be7fa9e322e405a51aa4586466ab84e8461
 
 build:
   number: 0
@@ -33,13 +33,13 @@ requirements:
     - phik >=0.11.1
     - visions 0.7.4
     - numpy >=1.16.0
-    - tangled-up-in-unicode 0.1.0
+    - tangled-up-in-unicode 0.2.0
     - tqdm >=4.48.2
     - imagehash
     - pillow
     - seaborn-base >=0.10.1
-    - joblib 1.0.1
-    - markupsafe 2.0.1
+    - joblib 1.1.0
+    - markupsafe 2.1.1
     - multimethod >=1.4
 
 test:
