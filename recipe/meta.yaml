@@ -31,7 +31,7 @@ requirements:
     - jinja2 >=2.11.1
     - htmlmin >=0.1.12
     - phik >=0.11.1
-    - visions 0.7.5
+    - visions 0.7.4
     - numpy >=1.16.0
     - tangled-up-in-unicode 0.2.0
     - tqdm >=4.48.2
