@@ -42,7 +42,7 @@ requirements:
     - markupsafe 2.1.1
     - multimethod >=1.4,<1.9
     - statsmodels >=0.13.2,<0.14
-   run_constrained:
+  run_constrained:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3   
     - ipywidgets >=7.5.1
