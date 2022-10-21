@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ec14b77aa86f6c261e04e1d1b8511994aa3402c1a0fc83393073ba1576f9434
+  sha256: 8c7db840e3517fbaf27f8e2187f26f68c30d2826eea5f900fc09993198b06784
 
 build:
   number: 0
@@ -44,7 +44,7 @@ requirements:
     - statsmodels >=0.13.2,<0.14
   run_constrained:
     - jupyter-client >=5.3.4
-    - jupyter-core >=4.6.3   
+    - jupyter-core >=4.6.3
     - ipywidgets >=7.5.1
 
 test:
