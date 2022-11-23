@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,26 +8,25 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8c7db840e3517fbaf27f8e2187f26f68c30d2826eea5f900fc09993198b06784
+  sha256: 5a34d54b23ac0e190a528d7766f803ee2e70f3ec23e5244d329159932325ac0e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python <3.11
     - pip
   run:
-    - python >=3.6
+    - python <3.11
     - scipy >=1.4.1,<1.10
     - requests >=2.24.0,<2.29
     - pydantic >=1.8.1,<1.11
     - pyyaml >=5.0.0,<6.1
-    - missingno >=0.4.2,<0.6
     - pandas >1.1,<1.6,!=1.4.0
-    - matplotlib-base >=3.2,<3.6
+    - matplotlib-base >=3.2,<3.7
     - jinja2 >=2.11.1,<3.2
     - htmlmin 0.1.12
     - phik >=0.11.1,<0.13
@@ -39,10 +38,12 @@ requirements:
     - seaborn-base >=0.10.1,<0.13
     - multimethod >=1.4,<1.10
     - statsmodels >=0.13.2,<0.14
+    - typeguard >=2.13.2, <2.14
   run_constrained:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3
     - ipywidgets >=7.5.1
+    - tangled-up-in-unicode 0.2.0
 
 test:
   imports:
