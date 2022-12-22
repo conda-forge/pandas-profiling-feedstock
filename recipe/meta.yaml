@@ -39,10 +39,10 @@ requirements:
     - multimethod >=1.4,<1.10
     - statsmodels >=0.13.2,<0.14
     - typeguard >=2.13.2, <2.14
+    - ipywidgets >=7.5.1
   run_constrained:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3
-    - ipywidgets >=7.5.1
     - tangled-up-in-unicode 0.2.0
 
 test:
