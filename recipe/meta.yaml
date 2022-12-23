@@ -1,5 +1,5 @@
 {% set name = "pandas-profiling" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5a34d54b23ac0e190a528d7766f803ee2e70f3ec23e5244d329159932325ac0e
+  sha256: 13928312329519f2ce0a4846b5b45887510b7b5d0214970aea8db10bc15f8070
 
 build:
   number: 0
@@ -39,10 +39,10 @@ requirements:
     - multimethod >=1.4,<1.10
     - statsmodels >=0.13.2,<0.14
     - typeguard >=2.13.2, <2.14
+    - ipywidgets >=7.5.1
   run_constrained:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3
-    - ipywidgets >=7.5.1
     - tangled-up-in-unicode 0.2.0
 
 test:
