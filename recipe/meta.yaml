@@ -47,7 +47,7 @@ requirements:
 
 test:
   imports:
-    - pandas_profiling
+    - ydata_profiling
   commands:
     - pip check
   requires:
